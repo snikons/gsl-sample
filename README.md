@@ -21,7 +21,7 @@ Windows:
 - Option 1: Download a ZIP file of the code from https://github.com/ampl/gsl
 - Option 2: `git clone https://github.com/ampl/gsl.git`
 
-## Step 2: Build GSL
+## Step 3: Build GSL
 
 macOS:
 ```text
@@ -34,14 +34,15 @@ cmake --build .
 
 Windows:
 ```text
-# In the gsl directory
+# Open Developer Command Prompt for Visual Studio 2022
+# cd to the gsl directory
 mkdir build
 cd build
 cmake -G"Visual Studio 17 2022" -DGSL_INSTALL_MULTI_CONFIG=ON -DBUILD_SHARED_LIBS=OFF -DMSVC_RUNTIME_DYNAMIC=OFF ..
 cmake --build . --config Release
 ```
 
-## Step 3: Build GSL sample
+## Step 4: Build GSL sample
 
 macOS:
 ```text
@@ -51,11 +52,12 @@ macOS:
 
 Windows:
 ```text
-# In the gsl-sample directory
+# Open Developer Command Prompt for Visual Studio 2022
+# cd to the gsl-sample directory
 winbuild.bat
 ```
 
-## Step 4: Run GSL sample
+## Step 5: Run GSL sample
 
 macOS:
 ```text
