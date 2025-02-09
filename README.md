@@ -33,13 +33,12 @@ cmake --build .
 ```
 
 Windows:
+Copy `winbuildgsl.bat` to the `gsl` source directory.
+
 ```text
 # Open Developer Command Prompt for Visual Studio 2022
 # cd to the gsl directory
-mkdir build
-cd build
-cmake .. -G"Visual Studio 17 2022" -DGSL_INSTALL_MULTI_CONFIG=ON -DBUILD_SHARED_LIBS=OFF -DMSVC_RUNTIME_DYNAMIC=OFF -DNO_AMPL_BINDINGS=1
-cmake --build . --config Release
+winbuildgsl.bat
 ```
 
 ## Step 4: Build GSL sample
