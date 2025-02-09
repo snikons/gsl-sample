@@ -6,7 +6,7 @@ project(${PROJECT_NAME})
 find_library(
     GSL_LIB
     NAMES libgsl gsl
-    HINTS ${GSL_PATH}
+    HINTS ${CMAKE_CURRENT_SOURCE_DIR}/${GSL_PATH}
 )
 if(GSL_LIB)
     message(STATUS "GSL library found at ${GSL_LIB}")
